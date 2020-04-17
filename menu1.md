@@ -9,6 +9,8 @@
 
 Testing!!
 
+Foo
+
 If you would like to show code as well as what the code outputs, you only need to specify where the script corresponding to the code block will be saved.
 
 Indeed, what happens is that the code block gets saved as a script which then gets executed.
