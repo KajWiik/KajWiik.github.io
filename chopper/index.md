@@ -20,7 +20,7 @@ Geometrical optics values are calculated by integrating the reflected intensity 
 ### 86 GHz $2\omega_0$
 \fig{./eff_2w0_86.svg}
 
-## Efficiency plots with only geometrical optics
+## Efficiency plots with geometrical optics
 ### 22 GHz geometrical optics
 \fig{./eff_go_22.svg}
 
