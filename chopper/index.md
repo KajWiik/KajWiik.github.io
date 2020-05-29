@@ -1,8 +1,5 @@
-@def title = "Beam switching efficiencies"
-
-\toc
-
 # Beam switching efficiencies
+\toc
 
 Beam switching efficiencies are presented below for a Cassegrain antenna where subreflector subtends an angle of 14$^{\circ}$ with an edge taper of 12 dB (e.g. in Metsähovi Radio Observatory).The efficiencies are calculated for different chopper blade radii and distances from beam waist to chopper blade. Ohmic losses are not included. Also no mechanical constraints like cabin size are not taken into accunt. E.g. it is very clear that the largest diameter (1m) does not fit into the Metsähovi cabin.
 
