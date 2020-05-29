@@ -1,0 +1,26 @@
+R_start = 0.2
+R_step = 0.02
+#R_step = 0.4
+R_stop = 0.5
+
+focus_start = 0.0
+focus_step = 0.02
+#focus_step = 0.2
+focus_stop = 0.2
+
+Rrange = R_start:R_step:R_stop
+z₀range = focus_start:focus_step:focus_stop
+
+println(io, "<table>")
+for R in Rrange
+    println(io, "<tr>")
+    for z₀ in z₀range
+        println(io, "<th>", bladecell(R, z, effs, basepath), "</th>")
+    end
+    println(io, "</tr>")
+end
+println(io, "</table>")
+
+function bladecell(io, R, z, effs, basepath)
+    
+end

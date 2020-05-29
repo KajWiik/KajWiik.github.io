@@ -1,0 +1,103 @@
+# Switching efficiencies
+
+Beam switching efficiencies are presented below for a Cassegrain antenna where subreflector subtends an angle of 14$^{\circ}$ with an edge taper of 12 dB (Metsähovi Radio Observatory).The efficiencies are calculated for different chopper blade radii and distances from beam waist to chopper blade. Ohmic losses are not included. 
+
+$2\omega_0$ values are calculated with signal blanking when $2\omega_0$ contour coincides the chopper blade. Going beyond the $2\omega_0$ radius (beam truncation) is very difficult to simulate and effects will in any case be nonlinear, i.e. the signal is not necessarily decrease linearly with increasing truncation (see Goldsmith xxxx).
+
+Geometrical optics values are calculated by integrating the intensity that is reflecting from the chopper blade. No diffraction effects are taken into account. Beam truncation effects are certainly reducing efficiency from these values. 
+
+
+## 22 GHz $2\omega_0$
+\fig{./eff_2w0_22.svg}
+
+## 37 GHz $2\omega_0$
+\fig{./eff_2w0_37.svg}
+
+## 43 GHz $2\omega_0$
+\fig{./eff_2w0_43.svg}
+
+## 86 GHz $2\omega_0$
+\fig{./eff_2w0_86.svg}
+
+## 22 GHz geometrical optics
+\fig{./eff_go_22.svg}
+
+## 37 GHz geometrical optics
+\fig{./eff_go_37.svg}
+
+## 43 GHz geometrical optics
+\fig{./eff_go_43.svg}
+
+## 86 GHz geometrical optics
+\fig{./eff_go_86.svg}
+
+# Testing
+
+\fig{./eff_2w0_43.svg}
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | 1600 |
+| col 2 is      | centered      |   12 |
+| zebra stripes | are neat      |    1 |
+
+~~~
+<style>
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+table {
+	width: 90%;
+	display: table;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+ <table>
+  <tr> 
+    <td><a href="yle.fi" title="asdfsaf">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+ </tr>
+ <tr>
+    <td><a href="yle.fi">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+  </tr>
+</table>
+~~~
+
+~~~
+<div class="row">
+  <div class="container">
+    <p>
+ <table>
+  <tr> 
+    <td><a href="yle.fi" title="asdfsaf">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+ </tr>
+ <tr>
+    <td><a href="yle.fi">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+    <td><a href="yle.fi">About</a></td> 
+  </tr>
+</table>
+    </p>
+    <div style="clear: both"></div>
+  </div>
+</div>
+~~~
+
+# Testing 2
