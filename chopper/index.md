@@ -35,7 +35,7 @@ Geometrical optics values are calculated by integrating the reflected intensity 
 
 # $2\omega_0$ contours on chopper blade
 
-Plots of $2\omega_0$ contours on the chopper blade with different combinations of focus and chopper blade radii are presented in the table below. Efficiencies for the given combination can be seen bb placing cursor over the link. $2\omega_0$ angle at 22 GHz (when it is defined) is shown as a dashed line.
+Plots of $2\omega_0$ contours on the chopper blade with different combinations of focus and chopper blade radii are presented in the table below. Efficiencies for the given combination can be seen by placing cursor over the link. $2\omega_0$ angle at 22 GHz (when it is defined) is shown as a dashed line.
 
 \textinput{chopper/blade.md}
 
