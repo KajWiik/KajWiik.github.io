@@ -5,6 +5,7 @@ The website_* must be defined for the RSS to work
 ----------------------------------------------------- -->
 
 @def author = "Kaj Wiik"
+@def hasplotly = false
 
 <!-- ---------------------------------------------------
 Add here global latex commands to use throughout your

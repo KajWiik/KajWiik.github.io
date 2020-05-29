@@ -569,8 +569,8 @@ sub {
 }
 
 img {
-  max-width: 100%;
-  width: auto\9;
+  max-width: 99%;
+  width: auto;
   height: auto;
   vertical-align: middle;
   border: 0;
@@ -4799,4 +4799,8 @@ a.reversefootnote:hover {
     display: none !important;
     height: 1px !important
   }
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }

@@ -1,0 +1,3 @@
+# Notes from my lab
+
+Here are some notes that I keep mainly for myself. I hope they are useful for others too...

@@ -1,7 +1,3 @@
-# Working with code blocks
+# Receivers
+## Nothing here yet
 
-## Live evaluation of code blocks
-
-Testing!!
-
-Foo

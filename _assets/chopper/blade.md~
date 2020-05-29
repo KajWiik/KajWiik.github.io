@@ -1,0 +1,265 @@
+~~~
+<style>
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  min-width: 0em;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+table {
+	width: 90%;
+	display: table;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<table>
+<tr>
+<td></td>
+<th scope="col">z₀=0</th>
+<th scope="col">z₀=20</th>
+<th scope="col">z₀=40</th>
+<th scope="col">z₀=60</th>
+<th scope="col">z₀=80</th>
+<th scope="col">z₀=100</th>
+<th scope="col">z₀=120</th>
+<th scope="col">z₀=140</th>
+<th scope="col">z₀=160</th>
+<th scope="col">z₀=180</th>
+<th scope="col">z₀=200</th>
+</tr>
+<tr>
+<th scope="row">R=200</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.10&#10;86 GHz: 0.66&#10;ηgo:&#10;22 GHz: 0.71&#10;37 GHz: 0.85&#10;43 GHz: 0.87&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.10&#10;86 GHz: 0.63&#10;ηgo:&#10;22 GHz: 0.71&#10;37 GHz: 0.84&#10;43 GHz: 0.87&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.06&#10;86 GHz: 0.61&#10;ηgo:&#10;22 GHz: 0.70&#10;37 GHz: 0.84&#10;43 GHz: 0.86&#10;86 GHz: 0.93">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.01&#10;86 GHz: 0.57&#10;ηgo:&#10;22 GHz: 0.69&#10;37 GHz: 0.83&#10;43 GHz: 0.85&#10;86 GHz: 0.93">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.52&#10;ηgo:&#10;22 GHz: 0.67&#10;37 GHz: 0.82&#10;43 GHz: 0.84&#10;86 GHz: 0.91">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.46&#10;ηgo:&#10;22 GHz: 0.66&#10;37 GHz: 0.80&#10;43 GHz: 0.83&#10;86 GHz: 0.90">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.34&#10;ηgo:&#10;22 GHz: 0.64&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.88">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.21&#10;ηgo:&#10;22 GHz: 0.61&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.86">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.01&#10;ηgo:&#10;22 GHz: 0.58&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.84">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.00&#10;ηgo:&#10;22 GHz: 0.55&#10;37 GHz: 0.71&#10;43 GHz: 0.74&#10;86 GHz: 0.81">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=200_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.00&#10;ηgo:&#10;22 GHz: 0.51&#10;37 GHz: 0.66&#10;43 GHz: 0.70&#10;86 GHz: 0.77">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=220</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.21&#10;43 GHz: 0.37&#10;86 GHz: 0.72&#10;ηgo:&#10;22 GHz: 0.78&#10;37 GHz: 0.88&#10;43 GHz: 0.90&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.21&#10;43 GHz: 0.37&#10;86 GHz: 0.72&#10;ηgo:&#10;22 GHz: 0.78&#10;37 GHz: 0.88&#10;43 GHz: 0.90&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.19&#10;43 GHz: 0.34&#10;86 GHz: 0.70&#10;ηgo:&#10;22 GHz: 0.77&#10;37 GHz: 0.88&#10;43 GHz: 0.89&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.14&#10;43 GHz: 0.32&#10;86 GHz: 0.68&#10;ηgo:&#10;22 GHz: 0.77&#10;37 GHz: 0.87&#10;43 GHz: 0.89&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.10&#10;43 GHz: 0.28&#10;86 GHz: 0.63&#10;ηgo:&#10;22 GHz: 0.76&#10;37 GHz: 0.86&#10;43 GHz: 0.88&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.03&#10;43 GHz: 0.23&#10;86 GHz: 0.59&#10;ηgo:&#10;22 GHz: 0.75&#10;37 GHz: 0.85&#10;43 GHz: 0.87&#10;86 GHz: 0.93">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.14&#10;86 GHz: 0.52&#10;ηgo:&#10;22 GHz: 0.73&#10;37 GHz: 0.84&#10;43 GHz: 0.86&#10;86 GHz: 0.91">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.03&#10;86 GHz: 0.46&#10;ηgo:&#10;22 GHz: 0.72&#10;37 GHz: 0.83&#10;43 GHz: 0.85&#10;86 GHz: 0.90">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.34&#10;ηgo:&#10;22 GHz: 0.70&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.88">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.23&#10;ηgo:&#10;22 GHz: 0.67&#10;37 GHz: 0.79&#10;43 GHz: 0.82&#10;86 GHz: 0.87">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=220_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.00&#10;86 GHz: 0.08&#10;ηgo:&#10;22 GHz: 0.65&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.84">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=240</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.39&#10;43 GHz: 0.50&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.82&#10;37 GHz: 0.90&#10;43 GHz: 0.92&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.39&#10;43 GHz: 0.50&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.82&#10;37 GHz: 0.90&#10;43 GHz: 0.92&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.39&#10;43 GHz: 0.50&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.82&#10;37 GHz: 0.90&#10;43 GHz: 0.91&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.37&#10;43 GHz: 0.48&#10;86 GHz: 0.74&#10;ηgo:&#10;22 GHz: 0.81&#10;37 GHz: 0.90&#10;43 GHz: 0.91&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.34&#10;43 GHz: 0.46&#10;86 GHz: 0.70&#10;ηgo:&#10;22 GHz: 0.81&#10;37 GHz: 0.89&#10;43 GHz: 0.91&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.30&#10;43 GHz: 0.41&#10;86 GHz: 0.66&#10;ηgo:&#10;22 GHz: 0.80&#10;37 GHz: 0.88&#10;43 GHz: 0.90&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.26&#10;43 GHz: 0.37&#10;86 GHz: 0.61&#10;ηgo:&#10;22 GHz: 0.79&#10;37 GHz: 0.88&#10;43 GHz: 0.89&#10;86 GHz: 0.93">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.19&#10;43 GHz: 0.30&#10;86 GHz: 0.57&#10;ηgo:&#10;22 GHz: 0.78&#10;37 GHz: 0.87&#10;43 GHz: 0.88&#10;86 GHz: 0.92">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.10&#10;43 GHz: 0.23&#10;86 GHz: 0.50&#10;ηgo:&#10;22 GHz: 0.77&#10;37 GHz: 0.86&#10;43 GHz: 0.87&#10;86 GHz: 0.91">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.14&#10;86 GHz: 0.43&#10;ηgo:&#10;22 GHz: 0.75&#10;37 GHz: 0.84&#10;43 GHz: 0.86&#10;86 GHz: 0.90">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=240_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.00&#10;43 GHz: 0.01&#10;86 GHz: 0.34&#10;ηgo:&#10;22 GHz: 0.73&#10;37 GHz: 0.83&#10;43 GHz: 0.84&#10;86 GHz: 0.88">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=260</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.50&#10;43 GHz: 0.59&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.85&#10;37 GHz: 0.92&#10;43 GHz: 0.93&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.50&#10;43 GHz: 0.59&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.85&#10;37 GHz: 0.92&#10;43 GHz: 0.93&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.50&#10;43 GHz: 0.59&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.85&#10;37 GHz: 0.92&#10;43 GHz: 0.93&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.48&#10;43 GHz: 0.57&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.85&#10;37 GHz: 0.91&#10;43 GHz: 0.93&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.46&#10;43 GHz: 0.54&#10;86 GHz: 0.74&#10;ηgo:&#10;22 GHz: 0.84&#10;37 GHz: 0.91&#10;43 GHz: 0.92&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.43&#10;43 GHz: 0.52&#10;86 GHz: 0.72&#10;ηgo:&#10;22 GHz: 0.84&#10;37 GHz: 0.90&#10;43 GHz: 0.92&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.41&#10;43 GHz: 0.50&#10;86 GHz: 0.68&#10;ηgo:&#10;22 GHz: 0.83&#10;37 GHz: 0.90&#10;43 GHz: 0.91&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.37&#10;43 GHz: 0.46&#10;86 GHz: 0.63&#10;ηgo:&#10;22 GHz: 0.82&#10;37 GHz: 0.89&#10;43 GHz: 0.90&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.32&#10;43 GHz: 0.41&#10;86 GHz: 0.59&#10;ηgo:&#10;22 GHz: 0.81&#10;37 GHz: 0.88&#10;43 GHz: 0.90&#10;86 GHz: 0.93">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.26&#10;43 GHz: 0.34&#10;86 GHz: 0.54&#10;ηgo:&#10;22 GHz: 0.80&#10;37 GHz: 0.87&#10;43 GHz: 0.89&#10;86 GHz: 0.92">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=260_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.17&#10;43 GHz: 0.28&#10;86 GHz: 0.48&#10;ηgo:&#10;22 GHz: 0.79&#10;37 GHz: 0.86&#10;43 GHz: 0.87&#10;86 GHz: 0.90">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=280</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.14&#10;37 GHz: 0.59&#10;43 GHz: 0.66&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.14&#10;37 GHz: 0.59&#10;43 GHz: 0.66&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.12&#10;37 GHz: 0.57&#10;43 GHz: 0.63&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.12&#10;37 GHz: 0.57&#10;43 GHz: 0.63&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.10&#10;37 GHz: 0.54&#10;43 GHz: 0.61&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.92&#10;43 GHz: 0.93&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.06&#10;37 GHz: 0.52&#10;43 GHz: 0.59&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.86&#10;37 GHz: 0.92&#10;43 GHz: 0.93&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.01&#10;37 GHz: 0.50&#10;43 GHz: 0.57&#10;86 GHz: 0.72&#10;ηgo:&#10;22 GHz: 0.86&#10;37 GHz: 0.91&#10;43 GHz: 0.92&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.48&#10;43 GHz: 0.54&#10;86 GHz: 0.70&#10;ηgo:&#10;22 GHz: 0.85&#10;37 GHz: 0.91&#10;43 GHz: 0.92&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.43&#10;43 GHz: 0.50&#10;86 GHz: 0.66&#10;ηgo:&#10;22 GHz: 0.84&#10;37 GHz: 0.90&#10;43 GHz: 0.91&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.39&#10;43 GHz: 0.46&#10;86 GHz: 0.61&#10;ηgo:&#10;22 GHz: 0.84&#10;37 GHz: 0.89&#10;43 GHz: 0.90&#10;86 GHz: 0.93">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=280_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.00&#10;37 GHz: 0.34&#10;43 GHz: 0.41&#10;86 GHz: 0.57&#10;ηgo:&#10;22 GHz: 0.83&#10;37 GHz: 0.89&#10;43 GHz: 0.90&#10;86 GHz: 0.92">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=300</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.30&#10;37 GHz: 0.63&#10;43 GHz: 0.70&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.30&#10;37 GHz: 0.63&#10;43 GHz: 0.70&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.28&#10;37 GHz: 0.63&#10;43 GHz: 0.68&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.28&#10;37 GHz: 0.63&#10;43 GHz: 0.68&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.26&#10;37 GHz: 0.61&#10;43 GHz: 0.66&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.88&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.23&#10;37 GHz: 0.59&#10;43 GHz: 0.66&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.88&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.21&#10;37 GHz: 0.57&#10;43 GHz: 0.63&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.88&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.19&#10;37 GHz: 0.54&#10;43 GHz: 0.61&#10;86 GHz: 0.72&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.92&#10;43 GHz: 0.93&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.14&#10;37 GHz: 0.52&#10;43 GHz: 0.57&#10;86 GHz: 0.70&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.92&#10;43 GHz: 0.92&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.08&#10;37 GHz: 0.48&#10;43 GHz: 0.54&#10;86 GHz: 0.66&#10;ηgo:&#10;22 GHz: 0.86&#10;37 GHz: 0.91&#10;43 GHz: 0.92&#10;86 GHz: 0.94">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=300_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.03&#10;37 GHz: 0.46&#10;43 GHz: 0.50&#10;86 GHz: 0.63&#10;ηgo:&#10;22 GHz: 0.85&#10;37 GHz: 0.90&#10;43 GHz: 0.91&#10;86 GHz: 0.93">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=320</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.39&#10;37 GHz: 0.68&#10;43 GHz: 0.72&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.39&#10;37 GHz: 0.68&#10;43 GHz: 0.72&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.39&#10;37 GHz: 0.68&#10;43 GHz: 0.72&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.95&#10;43 GHz: 0.95&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.39&#10;37 GHz: 0.66&#10;43 GHz: 0.72&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.37&#10;37 GHz: 0.66&#10;43 GHz: 0.70&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.34&#10;37 GHz: 0.63&#10;43 GHz: 0.70&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.34&#10;37 GHz: 0.63&#10;43 GHz: 0.68&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.30&#10;37 GHz: 0.61&#10;43 GHz: 0.66&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.28&#10;37 GHz: 0.59&#10;43 GHz: 0.63&#10;86 GHz: 0.74&#10;ηgo:&#10;22 GHz: 0.88&#10;37 GHz: 0.93&#10;43 GHz: 0.93&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.26&#10;37 GHz: 0.54&#10;43 GHz: 0.59&#10;86 GHz: 0.70&#10;ηgo:&#10;22 GHz: 0.88&#10;37 GHz: 0.92&#10;43 GHz: 0.93&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=320_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.21&#10;37 GHz: 0.52&#10;43 GHz: 0.57&#10;86 GHz: 0.68&#10;ηgo:&#10;22 GHz: 0.87&#10;37 GHz: 0.91&#10;43 GHz: 0.92&#10;86 GHz: 0.94">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=340</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.46&#10;37 GHz: 0.72&#10;43 GHz: 0.77&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.46&#10;37 GHz: 0.70&#10;43 GHz: 0.74&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.46&#10;37 GHz: 0.70&#10;43 GHz: 0.74&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.46&#10;37 GHz: 0.70&#10;43 GHz: 0.74&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.46&#10;37 GHz: 0.70&#10;43 GHz: 0.74&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.43&#10;37 GHz: 0.68&#10;43 GHz: 0.72&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.41&#10;37 GHz: 0.66&#10;43 GHz: 0.70&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.41&#10;37 GHz: 0.66&#10;43 GHz: 0.68&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.39&#10;37 GHz: 0.63&#10;43 GHz: 0.66&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.34&#10;37 GHz: 0.61&#10;43 GHz: 0.63&#10;86 GHz: 0.74&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.95">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=340_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.32&#10;37 GHz: 0.59&#10;43 GHz: 0.61&#10;86 GHz: 0.70&#10;ηgo:&#10;22 GHz: 0.89&#10;37 GHz: 0.93&#10;43 GHz: 0.93&#10;86 GHz: 0.95">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=360</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.52&#10;37 GHz: 0.74&#10;43 GHz: 0.79&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.52&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.52&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.52&#10;37 GHz: 0.72&#10;43 GHz: 0.77&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.50&#10;37 GHz: 0.72&#10;43 GHz: 0.77&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.50&#10;37 GHz: 0.70&#10;43 GHz: 0.74&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.48&#10;37 GHz: 0.70&#10;43 GHz: 0.72&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.48&#10;37 GHz: 0.68&#10;43 GHz: 0.72&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.46&#10;37 GHz: 0.66&#10;43 GHz: 0.70&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.43&#10;37 GHz: 0.63&#10;43 GHz: 0.68&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.94&#10;43 GHz: 0.94&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=360_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.41&#10;37 GHz: 0.61&#10;43 GHz: 0.66&#10;86 GHz: 0.74&#10;ηgo:&#10;22 GHz: 0.90&#10;37 GHz: 0.93&#10;43 GHz: 0.94&#10;86 GHz: 0.95">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=380</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.74&#10;43 GHz: 0.79&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.54&#10;37 GHz: 0.74&#10;43 GHz: 0.79&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.54&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.54&#10;37 GHz: 0.72&#10;43 GHz: 0.77&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.52&#10;37 GHz: 0.70&#10;43 GHz: 0.74&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.50&#10;37 GHz: 0.70&#10;43 GHz: 0.72&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.95&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.50&#10;37 GHz: 0.68&#10;43 GHz: 0.70&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.96">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=380_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.48&#10;37 GHz: 0.66&#10;43 GHz: 0.68&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.91&#10;37 GHz: 0.94&#10;43 GHz: 0.95&#10;86 GHz: 0.96">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=400</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.61&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.61&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.61&#10;37 GHz: 0.77&#10;43 GHz: 0.81&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.59&#10;37 GHz: 0.77&#10;43 GHz: 0.81&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.59&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.59&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.72&#10;43 GHz: 0.77&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.54&#10;37 GHz: 0.72&#10;43 GHz: 0.74&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.54&#10;37 GHz: 0.70&#10;43 GHz: 0.72&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.95&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=400_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.52&#10;37 GHz: 0.68&#10;43 GHz: 0.72&#10;86 GHz: 0.77&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.95&#10;86 GHz: 0.96">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=420</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.79&#10;43 GHz: 0.83&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.79&#10;43 GHz: 0.83&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.79&#10;43 GHz: 0.83&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.61&#10;37 GHz: 0.77&#10;43 GHz: 0.81&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.61&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.59&#10;37 GHz: 0.74&#10;43 GHz: 0.79&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.59&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.72&#10;43 GHz: 0.74&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=420_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.57&#10;37 GHz: 0.70&#10;43 GHz: 0.74&#10;86 GHz: 0.79&#10;ηgo:&#10;22 GHz: 0.92&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=440</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.79&#10;43 GHz: 0.83&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.61&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.61&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=440_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.59&#10;37 GHz: 0.72&#10;43 GHz: 0.74&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.95&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=460</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.81&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.81&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.81&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=460_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.63&#10;37 GHz: 0.74&#10;43 GHz: 0.77&#10;86 GHz: 0.81&#10;ηgo:&#10;22 GHz: 0.93&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=480</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.94&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.98&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.94&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.81&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=480_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.66&#10;37 GHz: 0.77&#10;43 GHz: 0.79&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.96&#10;86 GHz: 0.97">PDF</a></td>
+</tr>
+<tr>
+<th scope="row">R=500</th>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=0.pdf title="η2ω₀:&#10;22 GHz: 0.72&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.94&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.98&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=20.pdf title="η2ω₀:&#10;22 GHz: 0.72&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.94&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.98&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=40.pdf title="η2ω₀:&#10;22 GHz: 0.72&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.94&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.98&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=60.pdf title="η2ω₀:&#10;22 GHz: 0.72&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.98&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=80.pdf title="η2ω₀:&#10;22 GHz: 0.72&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.92&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=100.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.83&#10;43 GHz: 0.86&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=120.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.90&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.98&#10;86 GHz: 0.99">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=140.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.81&#10;43 GHz: 0.83&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=160.pdf title="η2ω₀:&#10;22 GHz: 0.70&#10;37 GHz: 0.81&#10;43 GHz: 0.81&#10;86 GHz: 0.88&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=180.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.79&#10;43 GHz: 0.81&#10;86 GHz: 0.86&#10;ηgo:&#10;22 GHz: 0.95&#10;37 GHz: 0.97&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+<td><a href=localhost:8000/assets/chopper/blade_R=500_z0=200.pdf title="η2ω₀:&#10;22 GHz: 0.68&#10;37 GHz: 0.79&#10;43 GHz: 0.79&#10;86 GHz: 0.83&#10;ηgo:&#10;22 GHz: 0.94&#10;37 GHz: 0.96&#10;43 GHz: 0.97&#10;86 GHz: 0.98">PDF</a></td>
+</tr>
+</table>
+~~~
