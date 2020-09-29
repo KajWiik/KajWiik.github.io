@@ -8,10 +8,14 @@ using BenchmarkTools
 
 $$ \alpha = \beta $$
 
-```julia
+```julia:pyplot1
 using PyPlot
-x = range(0, stop=6π, length=1000)
-y = sin.(x)
-
-plot(x, y)
+figure(figsize=(8, 6))
+x = range(-2, 2, length=500)
+for α in 1:5
+    plot(x, sinc.(α .* x))
+end
+savefig(joinpath(@OUTPUT, "sinc.svg")) # hide
 ```
+
+\fig{sinc}
