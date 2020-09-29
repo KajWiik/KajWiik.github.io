@@ -86,7 +86,6 @@ c = i + q.*im;
 ```
 
 ```julia:ex11
-figure() #hide
 
 plotspec(c, fs/4, (-20, 0));
 title("Complex IF signal spectrum");
