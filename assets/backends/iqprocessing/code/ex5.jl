@@ -3,3 +3,4 @@ figure() # hide
 plotspec(rf_sig, fs, (-10, 10))
 title("RF signal spectrum");
 savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide
+\fig{spectrum}
