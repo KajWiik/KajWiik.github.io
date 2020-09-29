@@ -1,6 +1,6 @@
 # Testing
 
-```julia
+```julia:bt
 using BenchmarkTools
 
 @btime sin(rand(100000))
