@@ -23,6 +23,7 @@ rf_sig = filt(h, rf_sig);</code></pre>
 <span class=hljs-keyword >end</span>;</code></pre>
 <pre><code class="julia hljs">plotspec(rf_sig, fs, (-<span class=hljs-number >10</span>, <span class=hljs-number >10</span>))
 title(<span class=hljs-string >&quot;RF signal spectrum&quot;</span>);
+gcf()
 <span class=hljs-comment >#\fig{spectrum}</span></code></pre>
 <pre><code class="julia hljs">lo_sig = <span class=hljs-number >8</span>GHz*t;
 if_sig = rf_sig.*exp.(<span class=hljs-literal >im</span>*<span class=hljs-number >2</span>*<span class=hljs-literal >pi</span>*lo_sig);</code></pre>
