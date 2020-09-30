@@ -6,8 +6,16 @@ function plotspec(sig, fs, limits)
     f = freq(pgram)
     p = power(pgram)
     i = sortperm(f)
-    plot(fs*f[i]/GHz, pow2db.(p[i]))
+    plt = plot(fs*f[i]/GHz, pow2db.(p[i]))
     ylim(limits...)
     xlabel("Frequency [GHz]")
     ylabel("Power [dB]")
-end;
+    return plt
+end
+
+figure() # hide
+
+plotspec(rf_sig, fs, (-10, 10))
+title("RF signal spectrum");
+
+savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide

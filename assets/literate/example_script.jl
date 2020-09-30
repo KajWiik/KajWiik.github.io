@@ -16,11 +16,11 @@ foo()
 
 1 + 1;
 
-using Plots
-x = range(0, stop=6π, length=1000)
-y1 = sin.(x)
-y2 = cos.(x)
-plot(x, [y1, y2])
+using PyPlot
+
+plot(rand(10))
+
+savefig(joinpath(@OUTPUT, "test.svg")) # hide
 
 x = 123
 

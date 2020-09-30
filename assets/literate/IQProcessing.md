@@ -34,40 +34,41 @@ function plotspec(sig, fs, limits)
     f = freq(pgram)
     p = power(pgram)
     i = sortperm(f)
-    plot(fs*f[i]/GHz, pow2db.(p[i]))
+    plt = plot(fs*f[i]/GHz, pow2db.(p[i]))
     ylim(limits...)
     xlabel("Frequency [GHz]")
     ylabel("Power [dB]")
-end;
-```
+    return plt
+end
 
-```julia:ex5
 figure() # hide
+
 plotspec(rf_sig, fs, (-10, 10))
 title("RF signal spectrum");
-gcf()
+
 savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide
-#\fig{spectrum}
 ```
 
-```julia:ex6
+\figalt{spectrum}{spectrum.svg}
+
+```julia:ex5
 lo_sig = 8GHz*t;
 if_sig = rf_sig.*exp.(im*2*pi*lo_sig);
 ```
 
-```julia:ex7
+```julia:ex6
 responsetype = Lowpass(3.8GHz, fs=fs)
 designmethod = Butterworth(20)
 i = filt(digitalfilter(responsetype, designmethod), imag(if_sig))
 q = filt(digitalfilter(responsetype, designmethod), real(if_sig));
 ```
 
-```julia:ex8
+```julia:ex7
 i = i[1:4:end]
 q = q[1:4:end];
 ```
 
-```julia:ex9
+```julia:ex8
 figure() # hide
 subplot(121)
 plotspec(i, fs/4, (-15, 5))
@@ -79,18 +80,18 @@ tight_layout(pad=2.0)
 savefig(joinpath(@OUTPUT, "iqspectrum.svg")) # hide
 ```
 
-\fig{iqspectrum}
+\figalt{iqspectrum}{iqspectrum.svg}
 
-```julia:ex10
-c = i + q.*im;
+```julia:ex9
+c = i + q.*im
 ```
 
-```julia:ex11
-
+```julia:ex10
+subplot(111)
 plotspec(c, fs/4, (-20, 0));
 title("Complex IF signal spectrum");
 savefig(joinpath(@OUTPUT, "cspectrum.svg")) # hide
 ```
 
-\fig{cspectrum}
+\figalt{cspectrum}{cspectrum.svg}
 

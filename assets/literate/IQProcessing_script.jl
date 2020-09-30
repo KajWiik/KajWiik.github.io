@@ -18,18 +18,19 @@ function plotspec(sig, fs, limits)
     f = freq(pgram)
     p = power(pgram)
     i = sortperm(f)
-    plot(fs*f[i]/GHz, pow2db.(p[i]))
+    plt = plot(fs*f[i]/GHz, pow2db.(p[i]))
     ylim(limits...)
     xlabel("Frequency [GHz]")
     ylabel("Power [dB]")
-end;
+    return plt
+end
 
 figure() # hide
+
 plotspec(rf_sig, fs, (-10, 10))
 title("RF signal spectrum");
-gcf()
+
 savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide
-#\fig{spectrum}
 
 lo_sig = 8GHz*t;
 if_sig = rf_sig.*exp.(im*2*pi*lo_sig);
@@ -52,10 +53,10 @@ title("Filtered Q channel")
 tight_layout(pad=2.0)
 savefig(joinpath(@OUTPUT, "iqspectrum.svg")) # hide
 
-c = i + q.*im;
+c = i + q.*im
 
 figure() #hide
-
+subplot(111)
 plotspec(c, fs/4, (-20, 0));
 title("Complex IF signal spectrum");
 savefig(joinpath(@OUTPUT, "cspectrum.svg")) # hide
