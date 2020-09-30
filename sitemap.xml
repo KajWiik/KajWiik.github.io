@@ -3,79 +3,85 @@
 
 <url>
     <loc>vlbi/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>backends/test/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>backends/iqprocessing/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>menu3/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>receivers/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>chopper/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>backends/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>menu2/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>menu1/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>franklin/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>backends/example/index.html</loc>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>foo/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>chopper/test3/index.html</loc>
-    <lastmod>2020-09-29</lastmod>
+    <lastmod>2020-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
