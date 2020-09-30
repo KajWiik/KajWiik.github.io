@@ -3,7 +3,7 @@
 ```julia:bt
 using BenchmarkTools
 
-@btime sin(rand(100000))
+@btime sin.(rand(100000))
 ```
 
 $$ \alpha = \beta $$

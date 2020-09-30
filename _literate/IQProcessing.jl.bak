@@ -1,16 +1,13 @@
 # # Digitizing IQ streams
 
 # Let's first load some libraries
-
 using DSP, PyPlot
 
 # Set up sampling rate
-
 const GHz = 1e9
 fs = 32GHz;
 
 # Signal generation
-
 h = remez(35, fs.*[0, 0.2, 0.25, 0.5], [0.5, 1], Hz = fs);
 rf_sig = randn(1000000);
 t = range(0, step = 1/fs, length = length(rf_sig))
@@ -19,7 +16,6 @@ rf_sig = filt(h, rf_sig);
 
 
 # Function for plotting spectrum
-
 function plotspec(sig, fs, limits)
     n = div(length(sig), 1024)
     noverlap = div(n, 2)
@@ -27,37 +23,33 @@ function plotspec(sig, fs, limits)
     f = freq(pgram)
     p = power(pgram)
     i = sortperm(f)
-    plt = plot(fs*f[i]/GHz, pow2db.(p[i]))
+    plot(fs*f[i]/GHz, pow2db.(p[i]))
     ylim(limits...)
     xlabel("Frequency [GHz]")
     ylabel("Power [dB]")
-    return plt
-end
-
+end;
+#----------------------------------------------------------------------------
 figure() # hide
-
 plotspec(rf_sig, fs, (-10, 10))
 title("RF signal spectrum");
 
 savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide
-
 # \figalt{spectrum}{spectrum.svg}
+
+#----------------------------------------------------------------------------
 
 lo_sig = 8GHz*t;
 if_sig = rf_sig.*exp.(im*2*pi*lo_sig);
-
 #----------------------------------------------------------------------------
 
 responsetype = Lowpass(3.8GHz, fs=fs)
 designmethod = Butterworth(20)
 i = filt(digitalfilter(responsetype, designmethod), imag(if_sig))
 q = filt(digitalfilter(responsetype, designmethod), real(if_sig));
-
 #----------------------------------------------------------------------------
 
 i = i[1:4:end]
 q = q[1:4:end];
-
 #----------------------------------------------------------------------------
 
 
@@ -70,22 +62,17 @@ plotspec(q, fs/4, (-15, 5))
 title("Filtered Q channel")
 tight_layout(pad=2.0)
 savefig(joinpath(@OUTPUT, "iqspectrum.svg")) # hide
-
-# \figalt{iqspectrum}{iqspectrum.svg}
-
-
+# \fig{iqspectrum}
 #----------------------------------------------------------------------------
 
 c = i + q.*im
-
 #----------------------------------------------------------------------------
-
 figure() #hide
-subplot(111)
+
 plotspec(c, fs/4, (-20, 0));
 title("Complex IF signal spectrum");
 savefig(joinpath(@OUTPUT, "cspectrum.svg")) # hide
+# \fig{cspectrum}
 
-# \figalt{cspectrum}{cspectrum.svg}
 
-
+#----------------------------------------------------------------------------

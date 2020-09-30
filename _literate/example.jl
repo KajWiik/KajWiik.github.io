@@ -95,11 +95,13 @@ foo()
 # [Plots.jl](https://github.com/JuliaPlots/Plots.jl) package
 
 #nb %% A slide [code] {"slideshow": {"slide_type": "subslide"}}
-using Plots
-x = range(0, stop=6π, length=1000)
-y1 = sin.(x)
-y2 = cos.(x)
-plot(x, [y1, y2])
+using PyPlot
+
+plot(rand(10))
+
+savefig(joinpath(@OUTPUT, "test.svg")) # hide
+
+# \figalt{foo1}{test.svg}
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 # ### Custom processing
