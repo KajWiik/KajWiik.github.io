@@ -1,3 +1,4 @@
 [deps]
 DSP = "717857b8-e6f2-59f4-9121-6e50c889abd2"
+NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"
 PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
