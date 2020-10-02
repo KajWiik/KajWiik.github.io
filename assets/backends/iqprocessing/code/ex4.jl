@@ -12,10 +12,3 @@ function plotspec(sig, fs, limits)
     ylabel("Power [dB]")
     return plt
 end
-
-figure() # hide
-
-plotspec(rf_sig, fs, (-10, 10))
-title("RF signal spectrum");
-
-savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide

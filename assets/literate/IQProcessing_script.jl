@@ -28,17 +28,17 @@ end
 figure() # hide
 
 plotspec(rf_sig, fs, (-10, 10))
-title("RF signal spectrum");
+title("Input signal spectrum");
 
 savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide
 
 lo_sig = 8GHz*t;
-if_sig = rf_sig.*exp.(im*2*pi*lo_sig);
+baseband_sig = rf_sig.*exp.(im*2*pi*lo_sig);
 
 responsetype = Lowpass(3.8GHz, fs=fs)
 designmethod = Butterworth(20)
-i = filt(digitalfilter(responsetype, designmethod), imag(if_sig))
-q = filt(digitalfilter(responsetype, designmethod), real(if_sig));
+i = filt(digitalfilter(responsetype, designmethod), imag(baseband_sig))
+q = filt(digitalfilter(responsetype, designmethod), real(baseband_sig));
 
 i = i[1:4:end]
 q = q[1:4:end];
@@ -57,7 +57,7 @@ c = i + q.*im
 
 figure() #hide
 subplot(111)
-plotspec(c, fs/4, (-20, 0));
-title("Complex IF signal spectrum");
+plotspec(c, fs/4, (-20, 0))
+title("Complex baseband signal spectrum");
 savefig(joinpath(@OUTPUT, "cspectrum.svg")) # hide
 

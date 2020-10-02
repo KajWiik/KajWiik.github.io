@@ -1,14 +1,14 @@
-<!doctype html> <!-- Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes Free for personal and commercial use under the MIT license https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE --> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/minimal-mistakes.css"> <link rel=stylesheet  href="/css/adjust.css"> <!--[if IE ]> <style> /* old IE unsupported flexbox fixes */ .greedy-nav .site-title { padding-right: 3em; } .greedy-nav button { position: absolute; top: 0; right: 0; height: 100%; } </style> <![endif]--> <title>Digitizing IQ streams</title> <body class=layout--single > <div class=masthead > <div class=masthead__inner-wrap > <div class=masthead__menu > <nav id=site-nav  class=greedy-nav > <a class=site-title  href="/">Bits and pieces</a> <ul class=visible-links > <li class=masthead__menu-item ><a href="/vlbi/" >VLBI</a> <li class=masthead__menu-item ><a href="/receivers/" >Receivers</a> <li class=masthead__menu-item ><a href="/chopper/" >Chopper</a> <li class=masthead__menu-item ><a href="/backends/" >Backends</a> </ul> <button class="greedy-nav__toggle hidden" type=button > <span class=visually-hidden >Toggle menu</span> <div class=navicon ></div> </button> <ul class="hidden-links hidden"></ul> </nav> </div> </div> </div> <div class=initial-content > <div id=main  role=main > <div class="sidebar sticky"> <div itemscope itemtype="https://schema.org/Person"> <div class=author__avatar > </div> <div class=author__content > <h3 class=author__name  itemprop=name >Kaj Wiik</h3> <p class=author__bio  itemprop=description ></p> </div> <div class=author__urls-wrapper > <button class="btn btn--inverse">Follow</button> <ul class="author__urls social-icons"> <li itemprop=homeLocation  itemscope itemtype="https://schema.org/Place"> <li><a href="https://github.com/KajWiik" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden=true ></i> GitHub</a> </ul> </div> </div> </div> <div class=franklin-content ><h1 id=digitizing_iq_streams ><a href="#digitizing_iq_streams">Digitizing IQ streams</a></h1> <p>Let&#39;s first load some libraries</p> <pre><code class="julia hljs"><span class=hljs-keyword >using</span> DSP, PyPlot</code></pre>
-<p>Set up sampling rate</p>
+<!doctype html> <!-- Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes Free for personal and commercial use under the MIT license https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE --> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/minimal-mistakes.css"> <link rel=stylesheet  href="/css/adjust.css"> <!--[if IE ]> <style> /* old IE unsupported flexbox fixes */ .greedy-nav .site-title { padding-right: 3em; } .greedy-nav button { position: absolute; top: 0; right: 0; height: 100%; } </style> <![endif]--> <title>Wideband direct conversion IF stage for the RFSoC</title> <body class=layout--single > <div class=masthead > <div class=masthead__inner-wrap > <div class=masthead__menu > <nav id=site-nav  class=greedy-nav > <a class=site-title  href="/">Bits and pieces</a> <ul class=visible-links > <li class=masthead__menu-item ><a href="/vlbi/" >VLBI</a> <li class=masthead__menu-item ><a href="/receivers/" >Receivers</a> <li class=masthead__menu-item ><a href="/chopper/" >Chopper</a> <li class=masthead__menu-item ><a href="/backends/" >Backends</a> </ul> <button class="greedy-nav__toggle hidden" type=button > <span class=visually-hidden >Toggle menu</span> <div class=navicon ></div> </button> <ul class="hidden-links hidden"></ul> </nav> </div> </div> </div> <div class=initial-content > <div id=main  role=main > <div class="sidebar sticky"> <div itemscope itemtype="https://schema.org/Person"> <div class=author__avatar > </div> <div class=author__content > <h3 class=author__name  itemprop=name >Kaj Wiik</h3> <p class=author__bio  itemprop=description ></p> </div> <div class=author__urls-wrapper > <button class="btn btn--inverse">Follow</button> <ul class="author__urls social-icons"> <li itemprop=homeLocation  itemscope itemtype="https://schema.org/Place"> <li><a href="https://github.com/KajWiik" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden=true ></i> GitHub</a> </ul> </div> </div> </div> <div class=franklin-content ><h1 id=wideband_direct_conversion_if_stage_for_the_rfsoc ><a href="#wideband_direct_conversion_if_stage_for_the_rfsoc">Wideband direct conversion IF stage for the RFSoC</a></h1> <p>Recently a number of microwave &#40;17 - 45 GHz&#41; IQ downconverters targeted to the 5G wireless network have appeared to to the market, e.g. <a href="https://www.analog.com/en/products/hmc904.html">HMC904</a>, <a href="https://www.analog.com/en/products/hmc977.html">HMC977</a>, <a href="https://www.analog.com/en/products/admv1012.html">ADMV1012</a>, and <a href="https://www.analog.com/en/products/admv1014.html">ADMV1014</a>. An evaluation board is available for all these chips, so only interface to the RFSoC &#40;e.g. the <a href="https://www.xilinx.com/products/boards-and-kits/zcu111.html">ZCU111</a> evaluation board&#41; ADC&#39;s is needed to be designed and built in-house.</p> <p>Building a wideband receiver for radio astronomy would be &#40;at least in theory&#33;&#41; quite easy with these chips. Here is a concept for a 22 GHz receiver &#40;8 GHz bandwidth, one polarization&#41;:</p> <img src="/assets/backends/iqprocessing/IQ-IF-22.svg" alt=IQ-IF-22 > <p>and one for 37/43 GHz &#40;also 8 GHz bandwidth, one polarization&#41;:</p> <img src="/assets/backends/iqprocessing/IQ-IF-43.svg" alt=IQ-IF-43 > <p>Of course these designs can be used also at IF for higher frequency receivers &#40;86 GHz and up&#41;.</p> <p>For simplicity the RFSoC 4GS/s ADC&#39;s &#40;total of eight in a chip&#41; are used in an interleaved mode to increase the total speed to 8 GS/s and 4 GHz bandwidth per channel. This is possible because analog bandwidth of these converters is 4 GHz. Because both the I and Q channels are digitized, the total bandwidth is 8 GHz.</p> <p>It should be noted that in the examples above, the chips are used slightly beyond spacifications, not in a way that the performance &#40;IF response from DC and up to 4 GHz&#41; is known to be bad outside specs but that the values are not shown in the datasheets. These values can be easily measured during the design process. Slight droops in the response can of course be calibrated out in the firmware &#40;ADC&#39;s have 12 bit dynamic range&#41;&#41;.</p> <h1 id=digitizing_iq_streams ><a href="#digitizing_iq_streams">Digitizing IQ streams</a></h1> <p>To clarify IQ mixing and conversion process, here is a simple simulation written in <a href="https://julialang.org">Julia language</a>.</p> <p>Let&#39;s first load some libraries:</p> <pre><code class="julia hljs"><span class=hljs-keyword >using</span> DSP, PyPlot</code></pre>
+<p>Set up sampling rate at the input port, this is large enough to express the 16 GHz IF band. In reality, this signal is in the analog domain.</p>
 <pre><code class="julia hljs"><span class=hljs-keyword >const</span> GHz = <span class=hljs-number >1e9</span>
 fs = <span class=hljs-number >32</span>GHz;</code></pre>
-<p>Signal generation</p>
+<p>Then a test signal is generated by filtering some white noise and adding two sinusoids &#40;6 GHz and 9 GHz&#41;.</p>
 <pre><code class="julia hljs">h = remez(<span class=hljs-number >35</span>, fs.*[<span class=hljs-number >0</span>, <span class=hljs-number >0.2</span>, <span class=hljs-number >0.25</span>, <span class=hljs-number >0.5</span>], [<span class=hljs-number >0.5</span>, <span class=hljs-number >1</span>], Hz = fs);
 rf_sig = randn(<span class=hljs-number >1000000</span>);
 t = range(<span class=hljs-number >0</span>, step = <span class=hljs-number >1</span>/fs, length = length(rf_sig))
 rf_sig = rf_sig + <span class=hljs-number >0.2</span>*sin.(<span class=hljs-number >2</span>*<span class=hljs-literal >pi</span>*<span class=hljs-number >6</span>GHz*t) + <span class=hljs-number >0.1</span>*sin.(<span class=hljs-number >2</span>*<span class=hljs-literal >pi</span>*<span class=hljs-number >9</span>GHz*t);
 rf_sig = filt(h, rf_sig);</code></pre>
-<p>Function for plotting spectrum</p>
+<p>A convenience function for plotting spectrum:</p>
 <pre><code class="julia hljs"><span class=hljs-keyword >function</span> plotspec(sig, fs, limits)
     n = div(length(sig), <span class=hljs-number >1024</span>)
     noverlap = div(n, <span class=hljs-number >2</span>)
@@ -21,20 +21,23 @@ rf_sig = filt(h, rf_sig);</code></pre>
     xlabel(<span class=hljs-string >&quot;Frequency [GHz]&quot;</span>)
     ylabel(<span class=hljs-string >&quot;Power [dB]&quot;</span>)
     <span class=hljs-keyword >return</span> plt
-<span class=hljs-keyword >end</span>
-
-
-plotspec(rf_sig, fs, (-<span class=hljs-number >10</span>, <span class=hljs-number >10</span>))
-title(<span class=hljs-string >&quot;RF signal spectrum&quot;</span>);</code></pre>
+<span class=hljs-keyword >end</span></code></pre>
+<p>The resulting test signal looks like this:</p>
+<pre><code class="julia hljs">plotspec(rf_sig, fs, (-<span class=hljs-number >10</span>, <span class=hljs-number >10</span>))
+title(<span class=hljs-string >&quot;Input signal spectrum&quot;</span>);</code></pre>
 <img src="/assets/backends/iqprocessing/code/output/spectrum.svg" alt=spectrum >
+<p>The input signal is mixed &#40;multiplied&#41; with the complex local oscillator &#40;LO&#41; signal at 8 GHz producing a complex baseband signal:</p>
 <pre><code class="julia hljs">lo_sig = <span class=hljs-number >8</span>GHz*t;
-if_sig = rf_sig.*exp.(<span class=hljs-literal >im</span>*<span class=hljs-number >2</span>*<span class=hljs-literal >pi</span>*lo_sig);</code></pre>
+baseband_sig = rf_sig.*exp.(<span class=hljs-literal >im</span>*<span class=hljs-number >2</span>*<span class=hljs-literal >pi</span>*lo_sig);</code></pre>
+<p>Before AD conversion, the baseband signal must be lowpass filtered to 0 - 4 GHz &#40;Nyquist&#41;:</p>
 <pre><code class="julia hljs">responsetype = Lowpass(<span class=hljs-number >3.8</span>GHz, fs=fs)
 designmethod = Butterworth(<span class=hljs-number >20</span>)
-i = filt(digitalfilter(responsetype, designmethod), imag(if_sig))
-q = filt(digitalfilter(responsetype, designmethod), real(if_sig));</code></pre>
+i = filt(digitalfilter(responsetype, designmethod), imag(baseband_sig))
+q = filt(digitalfilter(responsetype, designmethod), real(baseband_sig));</code></pre>
+<p>In this simulation, AD conversion is expressed as decimation, i.e. only every fourth sample is preserved. Now the sample rate of each of the streams is &#40;32/4 GS/s &#61;&#41; 8 GS/s, i.e. the sample rate of two interleaved ADC&#39;s in the RFSoC.</p>
 <pre><code class="julia hljs">i = i[<span class=hljs-number >1</span>:<span class=hljs-number >4</span>:<span class=hljs-keyword >end</span>]
 q = q[<span class=hljs-number >1</span>:<span class=hljs-number >4</span>:<span class=hljs-keyword >end</span>];</code></pre>
+<p>Here are spectra of the digitized I and Q streams. The amplitude spectra seem to be identical and summed version of the upper and lower basebands &#40;phase differs&#41;.</p>
 <pre><code class="julia hljs">subplot(<span class=hljs-number >121</span>)
 plotspec(i, fs/<span class=hljs-number >4</span>, (-<span class=hljs-number >15</span>, <span class=hljs-number >5</span>))
 title(<span class=hljs-string >&quot;Filtered I channel&quot;</span>)
@@ -43,15 +46,17 @@ plotspec(q, fs/<span class=hljs-number >4</span>, (-<span class=hljs-number >15<
 title(<span class=hljs-string >&quot;Filtered Q channel&quot;</span>)
 tight_layout(pad=<span class=hljs-number >2.0</span>)</code></pre>
 <img src="/assets/backends/iqprocessing/code/output/iqspectrum.svg" alt=iqspectrum >
+<p>Let&#39;s combine the streams to a complex signal:</p>
 <pre><code class="julia hljs">c = i + q.*<span class=hljs-literal >im</span></code></pre>
+<p>Spectrum of the complex signal is a good representation of the original signal around LO at 8 GHz:</p>
 <pre><code class="julia hljs">subplot(<span class=hljs-number >111</span>)
-plotspec(c, fs/<span class=hljs-number >4</span>, (-<span class=hljs-number >20</span>, <span class=hljs-number >0</span>));
-title(<span class=hljs-string >&quot;Complex IF signal spectrum&quot;</span>);</code></pre>
+plotspec(c, fs/<span class=hljs-number >4</span>, (-<span class=hljs-number >20</span>, <span class=hljs-number >0</span>))
+title(<span class=hljs-string >&quot;Complex baseband signal spectrum&quot;</span>);</code></pre>
 <img src="/assets/backends/iqprocessing/code/output/cspectrum.svg" alt=cspectrum >
 
 <div class=page-foot >
   <div class=copyright >
-    &copy; Kaj Wiik. Last modified: September 30, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+    &copy; Kaj Wiik. Last modified: October 02, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
   </div>
 </div>
 </div>

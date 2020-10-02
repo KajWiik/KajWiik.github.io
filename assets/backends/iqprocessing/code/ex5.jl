@@ -1,3 +1,7 @@
 # This file was generated, do not modify it. # hide
-lo_sig = 8GHz*t;
-if_sig = rf_sig.*exp.(im*2*pi*lo_sig);
+figure() # hide
+
+plotspec(rf_sig, fs, (-10, 10))
+title("Input signal spectrum");
+
+savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide
