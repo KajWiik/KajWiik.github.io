@@ -83,7 +83,7 @@ savefig(joinpath(@OUTPUT, "spectrum.svg")) # hide
 
 \figalt{spectrum}{spectrum.svg}
 
-The input signal is mixed (multiplied) with the complex local oscillator (LO) signal at 8 GHz producing a complex baseband signal:
+The input signal is then mixed (multiplied) with a complex local oscillator (LO) signal at 8 GHz producing a complex baseband signal:
 
 ```julia:ex6
 lo_sig = 8GHz*t;

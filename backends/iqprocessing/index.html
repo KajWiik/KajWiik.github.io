@@ -26,7 +26,7 @@ rf_sig = filt(h, rf_sig);</code></pre>
 <pre><code class="julia hljs">plotspec(rf_sig, fs, (-<span class=hljs-number >10</span>, <span class=hljs-number >10</span>))
 title(<span class=hljs-string >&quot;Input signal spectrum&quot;</span>);</code></pre>
 <img src="/assets/backends/iqprocessing/code/output/spectrum.svg" alt=spectrum >
-<p>The input signal is mixed &#40;multiplied&#41; with the complex local oscillator &#40;LO&#41; signal at 8 GHz producing a complex baseband signal:</p>
+<p>The input signal is then mixed &#40;multiplied&#41; with a complex local oscillator &#40;LO&#41; signal at 8 GHz producing a complex baseband signal:</p>
 <pre><code class="julia hljs">lo_sig = <span class=hljs-number >8</span>GHz*t;
 baseband_sig = rf_sig.*exp.(<span class=hljs-literal >im</span>*<span class=hljs-number >2</span>*<span class=hljs-literal >pi</span>*lo_sig);</code></pre>
 <p>Before AD conversion, the baseband signal must be lowpass filtered to 0 - 4 GHz &#40;Nyquist&#41;:</p>
