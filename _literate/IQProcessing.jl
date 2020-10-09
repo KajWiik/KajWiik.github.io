@@ -1,19 +1,29 @@
-# # Wideband direct conversion IF stage for the RFSoC
-# Recently a number of microwave (17 - 45 GHz) IQ downconverters targeted to the 5G wireless network have appeared on the market, e.g. [HMC904](https://www.analog.com/en/products/hmc904.html), [HMC977](https://www.analog.com/en/products/hmc977.html), [ADMV1012](https://www.analog.com/en/products/admv1012.html), and [ADMV1014](https://www.analog.com/en/products/admv1014.html). An evaluation board is available for all these chips, so only interface to the RFSoC (e.g. the [ZCU111](https://www.xilinx.com/products/boards-and-kits/zcu111.html) evaluation board) ADC's is needed to be designed and built in-house in order to experiment with them.
+# # Wideband direct conversion IF stages for the RFSoC
+# Recently a number of microwave (2.5 - 45 GHz) IQ downconverters targeted to the 5G wireless network have appeared on the market, e.g. [HMC8193](https://www.analog.com/en/products/hmc8193.html), [HMC904](https://www.analog.com/en/products/hmc904.html), [HMC977](https://www.analog.com/en/products/hmc977.html), [ADMV1012](https://www.analog.com/en/products/admv1012.html), and [ADMV1014](https://www.analog.com/en/products/admv1014.html). An evaluation board is available for all these chips, so only interface to the RFSoC (e.g. the [ZCU111](https://www.xilinx.com/products/boards-and-kits/zcu111.html) evaluation board) ADC's is needed to be designed and built in-house in order to experiment with them.
 
-# Building a wideband receiver for radio astronomy would be (at least in theory!) quite easy with these devices. Here is a concept for a 22 GHz receiver (8 GHz bandwidth, one polarization channel):
+# ~~~
+# <img src="/assets/backends/iqprocessing/EV1HMC8193LC4ANGLE-web.png" alt="HMC8193_eval" style="width:500px;"/>
+# ~~~
+
+# __*Fig 1:*__ *HMC8193 evaluation board*
+
+
+# Building a wideband receiver for radio astronomy would be quite easy with these devices. Concepts for 4 - 8 (4 GHz bandwidth, one polarization channel), 22 and 37/43 GHz (8 GHz bandwidth, one polarization channel) receivers are shown in Figs 2 - 4.
+
+# \figalt{IQ-IF-22}{./IQ-IF-6.svg}
+# __*Fig 2:*__ *4 - 8 GHz receiver*
 
 # \figalt{IQ-IF-22}{./IQ-IF-22.svg}
-
-# and one for 37/43 GHz (also 8 GHz bandwidth, one polarization channel):
+# __*Fig 3:*__ *22  GHz receiver*
 
 # \figalt{IQ-IF-43}{./IQ-IF-43.svg}
+# __*Fig 4:*__ *37/43 GHz receiver*
 
 # Of course these designs can be used also at IF for higher frequency receivers (86 GHz and up).
 
-# For simplicity the RFSoC 4GS/s ADC's (total of eight in a chip) are used in an interleaved mode to increase the total speed to 8 GS/s and 4 GHz bandwidth per channel. This is possible because analog bandwidth of these converters is 4 GHz. Because both the I and Q channels are digitized, the total bandwidth is 8 GHz.
+# For simplicity the RFSoC 4GS/s ADC's (total of eight in a chip) are used in an interleaved mode in the versions with 8 GHz bandwidth to increase the total speed to 8 GS/s and 4 GHz bandwidth per channel. This is possible because analog bandwidth of these converters is 4 GHz. Because both the I and Q channels are digitized, the total bandwidth is 8 GHz. There is a support for I/Q phase/amplitude equalisation and synchronisation in the RFSoC.
 
-# It should be noted that in the examples above, the chips are used slightly beyond specifications, not in a way that the performance (IF response from DC and up to 4 GHz) is known to be bad outside specs but that the values are not shown in the datasheets. These values can easily be measured during the design process. Slight droops in the response can of course be calibrated out in the firmware (ADC's have 12 bit dynamic range)).
+# It should be noted that in the examples above, some of the chips are used slightly beyond specifications, not in a way that the performance (mainly IF response from DC and up to 4 GHz) is known to be bad outside specs but that the values are not shown in the datasheets. These values can easily be measured during the design process. Slight droops in the response can of course be calibrated out in the firmware (ADC's have 12 bit dynamic range)).
 
 
 # # Digitizing IQ streams
