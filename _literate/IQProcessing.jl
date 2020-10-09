@@ -23,7 +23,7 @@
 
 # For simplicity the RFSoC 4GS/s ADC's (total of eight in a chip) are used in an interleaved mode in the versions with 8 GHz bandwidth to increase the total speed to 8 GS/s and 4 GHz bandwidth per channel. This is possible because analog bandwidth of these converters is 4 GHz. Because both the I and Q channels are digitized, the total bandwidth is 8 GHz. There is a support for I/Q phase/amplitude equalisation and synchronisation in the RFSoC.
 
-# It should be noted that in the examples above, some of the chips are used slightly beyond specifications, not in a way that the performance (mainly IF response from DC and up to 4 GHz) is known to be bad outside specs but that the values are not shown in the datasheets. These values can easily be measured during the design process. Slight droops in the response can of course be calibrated out in the firmware (ADC's have 12 bit dynamic range)).
+# It should be noted that in the examples above, some of the chips are used slightly beyond specifications, not in a way that the performance (mainly IF response from DC and up to 4 GHz) is known to be bad outside specs but that the values are not shown in the datasheets. These values can easily be measured during the design process. Slight droops in the response can of course be calibrated out in the firmware (ADC's have 12 bit dynamic range).
 
 
 # # Digitizing IQ streams
